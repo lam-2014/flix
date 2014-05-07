@@ -23,10 +23,21 @@ Michael Hartl.
 - in `app/helpers/application_helper.rb`, since it can be useful for every views in the site
 - by editing the title tag in `app/views/layouts/application.html.erb`, i.e., `<title><%= full_title(yield(:title)) %></title>`
 
-5) Update the `routes.rb` file according to the table reported in the Exercise 4
+5) Update the `routes.rb` file according to the table reported in Exercise 4
 
 - in the `config` folder
 - update the links in the home accordingly
 - remove `index.html` from the public folder
 
 6) Add a faq page to the Pages controller and set a proper route
+
+### Applying some styles... (pre LAB 3) ###
+
+1) Fill all the views with some contents
+
+2) Add `bootstrap-sass` gem (version 3.1.1) to include the Bootstrap framework with Sass support [http://getbootstrap.com/](http://getbootstrap.com/)
+
+- update the `Gemfile`
+- run `bundle install`
+
+3) Add and fill a custom SCSS file in `app/assets/stylesheets`
