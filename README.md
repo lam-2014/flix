@@ -10,11 +10,11 @@ Michael Hartl.
 
 - `rails generate controller Pages home about contact` (or from the RubyMine menu *Tools > Run Rails Generator...*)
 
-2) In the home view, add a link to the other two views, e.g., `<%= link_to 'About', '#' %>`
+2) In the home view, add a link to the other two views, e.g., `<%= link_to "About", '#' %>`
 
 3) Add a title to the HTML files: "Flix | Page name"
 
-- by using the `provide` method in each view, i.e., `<% provide :title, 'Page name' %>`
+- by using the `provide` method in each view, i.e., `<% provide :title, "Page name" %>`
 - by editing the title tag in `app/views/layouts/application.html.erb`, i.e., `<title>Flix | <%= yield(:title) %></title>`
 - learn more about `provide` at [http://api.rubyonrails.org/classes/ActionView/Helpers/CaptureHelper.html#method-i-provide](http://api.rubyonrails.org/classes/ActionView/Helpers/CaptureHelper.html#method-i-provide)
 
@@ -22,3 +22,9 @@ Michael Hartl.
 
 - in `app/helpers/application_helper.rb`, since it can be useful for every views in the site
 - by editing the title tag in `app/views/layouts/application.html.erb`, i.e., `<title><%= full_title(yield(:title)) %></title>`
+
+5) Update the `routes.rb` file according to the table shown in the Exercise 4
+
+- in the `config` folder
+- update the links in the home accordingly
+- remove `index.html` from the public folder
