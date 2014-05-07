@@ -10,7 +10,7 @@ Michael Hartl.
 
 - `rails generate controller Pages home about contact` (or from the RubyMine menu *Tools > Run Rails Generator...*)
 
-2) In the home view, add a link to the other two views, e.g., `<%= link_to "About", '#' %>`
+2) In the home view, add a link to the other two views, e.g., `<%= link_to "About", "#" %>`
 
 3) Add a title to the HTML files: "Flix | Page name"
 
