@@ -72,3 +72,6 @@ Michael Hartl.
 - `name` must be always present (`presence: true`) and it must have a maximum length of 50 characters (`length: { maximum: 50 }`)
 - `email` must be always present, unique (`uniqueness: { case_sensitive: false }`) and with a specific defined format (`format: { with: VALID_EMAIL_REGEX }`)
 
+8) Enforce the uniqueness of the email by using a migration
+
+- add an index on the `email` column in the `users` database
