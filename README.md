@@ -45,3 +45,11 @@ Michael Hartl.
 ### User Modeling (LAB 3) ###
 
 1) Move HTML shim, header and footer code in three partials (placed in `app/views/layouts/`)
+
+2) Generate the User model, with two attributes: name and email
+
+- `rails generate model User name:string email:string` (or from the RubyMine menu *Tools > Run Rails Generator...*)
+
+3) Migrate the model to the database (i.e., create the table and columns corresponding to the User model)
+
+- `bundle exec rake db:migrate` (or from the RubyMine menu *Tools > Run Rake Tasks...*)
