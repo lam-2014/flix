@@ -75,3 +75,10 @@ Michael Hartl.
 8) Enforce the uniqueness of the email by using a migration
 
 - add an index on the `email` column in the `users` database
+
+9) Give to the User model a `password` field
+
+- generate/migrate a migration to add a column to store the password digest (i.e., an encrypted version of the password)
+- add the `has_secure_password` method to the User model, to use the authentication system of Rails
+- make accessible the two virtual attributes added by `has_secure_password`: `password` and `password_confirmation`
+- add a minimum length validation to the `password` attribute
