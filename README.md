@@ -96,3 +96,11 @@ Michael Hartl.
 4) Add the default routes for the Users controller
 
 - `resources :users` in `config/routes.rb`
+
+5) Add a user in the database, by editing the `new` action in the Users controller
+
+6) Add a new view associated to the Users controller
+
+- create `show.html.erb` in `app/views/users` (filled with some contents)
+- update the page stylesheet
+- add the corresponding action to the User controller (`users_controller.rb`)
