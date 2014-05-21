@@ -10,4 +10,15 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def create
+    # refine the user variable content with the data passed by the sign up form
+    @user = User.new(params[:user])
+    if @user.save
+      # handle a successful save
+      redirect_to @user
+    else
+      render 'new'
+    end
+  end
+
 end
