@@ -108,3 +108,7 @@ Michael Hartl.
 7) Add an (almost complete) helper for using a Gravatar as the profile pic for users (in `users_helper.rb`)
 
 - update the view responsible of showing a single user (`show.html.erb`)
+
+### Sign Up (LAB 4) ###
+
+1) Complete the Gravatar helper
