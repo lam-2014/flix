@@ -104,3 +104,7 @@ Michael Hartl.
 - create `show.html.erb` in `app/views/users` (filled with some contents)
 - update the page stylesheet
 - add the corresponding action to the User controller (`users_controller.rb`)
+
+7) Add an (almost complete) helper for using a Gravatar as the profile pic for users (in `users_helper.rb`)
+
+- update the view responsible of showing users (`show.html.erb`)
