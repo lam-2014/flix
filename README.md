@@ -112,3 +112,8 @@ Michael Hartl.
 ### Sign Up (LAB 4) ###
 
 1) Complete the Gravatar helper
+
+2) Remove the existing user
+
+- in the database: `bundle exec rake db:reset` (or from the RubyMine menu *Tools > Run Rake Tasks...*)
+- in the code: delete the line in the `new` action of the Users controller
