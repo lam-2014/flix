@@ -88,3 +88,5 @@ Michael Hartl.
 1) Create a Users controller for the signup page
 
 - `rails generate controller Users new` (or from the RubyMine menu *Tools > Run Rails Generator...*)
+
+2) Update the `routes.rb` file for mapping the `new` action to `/signup` (i.e., create a named route)

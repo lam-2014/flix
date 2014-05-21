@@ -1,7 +1,5 @@
 Flix::Application.routes.draw do
 
-  get "users/new"
-
   # route for the homepage
   root to: 'pages#home'
 
@@ -9,6 +7,8 @@ Flix::Application.routes.draw do
   match '/about', to: 'pages#about'
   match '/contact', to: 'pages#contact'
   match '/faq', to: 'pages#faq'
+
+  match '/signup', to: 'users#new'
 
 
   # The priority is based upon order of creation:
