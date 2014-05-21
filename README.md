@@ -130,3 +130,7 @@ Michael Hartl.
 - create a new user with the information inserted in the form
 - if it is possible to save such a user into the database, go to the user profile page
 - otherwise, go back to the sign up form
+
+6) Update the sign up form to show error messages (if any)
+
+- add a `_error_messages.html.erb` partial (in `app/views/shared`) to store the code for showing error messages of a generic form
