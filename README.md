@@ -203,3 +203,7 @@ a random string, safe for use in URIs, of length 16
 
 - please note that the `edit` view is almost identical to the `new` view
 - let the user change her Gravatar, too
+
+14) Update the Settings link in the header
+
+- it should point to `edit_user_path(current_user)`
