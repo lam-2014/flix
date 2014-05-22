@@ -192,3 +192,10 @@ a random string, safe for use in URIs, of length 16
 - handle a failed login (show an error message and go back to the login form)
 
 10) Update the header navbar
+
+11) Update the sign up method (i.e., `create` action in the Users controller) to perform a login if the registration was successful
+
+12) Write the `destroy` action in the Sessions controller for signing out
+
+- call the `sign out` method of SessionsHelper
+- redirect to the homepage

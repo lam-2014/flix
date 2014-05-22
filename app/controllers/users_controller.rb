@@ -15,7 +15,9 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       # handle a successful save
-      flash[:success] = 'Welcome to Flix!'
+      flash[:success] = "Welcome to Flix!"
+      # automatically sign in the new user
+      sign_in @user
       redirect_to @user
     else
       render 'new'
