@@ -222,7 +222,7 @@ a random string, safe for use in URIs, of length 16
 - add another helper method to the SessionsHelper, : check if the user for which the editing actions are called is also the current user
 - update the `edit` and `update` actions to remove a useless `@user` assignment
 
-5) Add the `index` action and view, to show all the users present in the website
+17) Add the `index` action and view, to show all the users present in the website
 
 - the action must be called only for signed in users: add `index` to the first `before_filter` in the Users controller
 - in the view, cycle upon all the users
