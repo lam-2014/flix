@@ -177,7 +177,6 @@ a random string, safe for use in URIs, of length 16
 
 7) Fill the Sessions controller with the required (empty) actions (new, create and destroy)
 
-
 8) Fill the view for the signin form (i.e., `app/views/sessions/new.html.erb`)
 
 - we need to ask for email (the username in our social network) and password
@@ -199,3 +198,8 @@ a random string, safe for use in URIs, of length 16
 
 - call the `sign out` method of SessionsHelper
 - redirect to the homepage
+
+13) Create the `edit` action and view for the Users controller
+
+- please note that the `edit` view is almost identical to the `new` view
+- let the user change her Gravatar, too
