@@ -165,3 +165,14 @@ a random string, safe for use in URIs, of length 16
 - two methods to set and get the current (logged) user for passing this information to all the other pages
 - `is_signed_in?`: tell if the current user is signed in
 - `sign_out`: clear the current user instance variable and delete the corresponding cookie, thus signing out the user
+
+5) Generate a Sessions controller and a `new.html.erb` view
+
+- `rails generate controller Sessions new` (or from the RubyMine menu *Tools > Run Rails Generator...*)
+
+6) Update routes to implement the session as a RESTful resource
+
+- add `match '/signin', to: 'sessions#new'` and `match '/signout, to: 'sessions#destroy', via: :delete`
+- add `resources :sessions, only: [:new, :create, :destroy]`
+
+7) Fill the Sessions controller with the required (empty) actions (new, create and destroy)
