@@ -158,3 +158,10 @@ Michael Hartl.
 a `create_remember_token` method and will run it before saving the user
 - define such a method as private and generate the token by using the `SecureRandom.urlsafe_base64` function; the method generates 
 a random string, safe for use in URIs, of length 16
+
+4) Add various methods to the SessionsHelper
+
+- `sign_in`: store the remember token in a permanent cookie (it lasts for 20 years...) and set the user performing the sign in as the current user
+- two methods to set and get the current (logged) user for passing this information to all the other pages
+- `is_signed_in?`: tell if the current user is signed in
+- `sign_out`: clear the current user instance variable and delete the corresponding cookie, thus signing out the user
