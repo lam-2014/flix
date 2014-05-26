@@ -71,7 +71,6 @@ footer {
 }
 
 /* sidebar */
-
 aside {
   section {
     padding: 10px 0;
@@ -101,7 +100,6 @@ aside {
 }
 
 /* forms */
-
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -132,7 +130,6 @@ input {
 }
 
 /* users index */
-
 .users {
   list-style: none;
   margin: 0;
@@ -147,7 +144,6 @@ input {
 }
 
 /* posts */
-
 .posts {
   list-style: none;
   margin: 10px 0 0 0;
@@ -178,8 +174,12 @@ input {
   }
 }
 
-/* miscellaneous */
+.btn-home {
+  max-width: 30%;
+  @extend .pull-right;
+}
 
+/* miscellaneous */
 .debug_dump {
   clear: both;
   float: left;
