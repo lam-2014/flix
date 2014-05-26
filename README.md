@@ -356,3 +356,11 @@ and one for ensuring that a user cannot follow another user more than one time
 - create the `_stats.html.erb` partial in the `shared` folder
 - include the partial in the home page and in the user profile
 - update the stylesheet
+
+9) Add the follow/unfollow button (form)
+
+- create the a general `_follow_form.html.erb` partial in the `view/users` folder
+- add a route for handling relationships (only create and destroy)
+- create the `_follow.html.erb` partial in the `view/users` folder
+- create the `_unfollow.html.erb` partial in the `view/users` folder
+- render the `_follow_form.html.erb` partial in the user profile
