@@ -344,3 +344,7 @@ and one for ensuring that a user cannot follow another user more than one time
 
 - a user has many "reverse" relationships
 - a user has many followers through the previously defined "reverse" relationships table
+
+6) Add some sample following data by updating the `populate` rake task
+
+- reset the database, and populate it again
