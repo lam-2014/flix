@@ -332,3 +332,5 @@ and one for ensuring that a user cannot follow another user more than one time
 
 - a user has many relationships: update the User model
 - a relationship belongs to a follower and a followed user: update the Relationship model
+
+3) Add the presence validation on the two attributes of the Relationship model
