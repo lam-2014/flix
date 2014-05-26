@@ -373,3 +373,9 @@ and one for ensuring that a user cannot follow another user more than one time
 
 11) Create the Relationships controller with the `create` and `destroy` actions (by hand)
 - a user must be signed in for follow/unfollow someone... add a `before_filter`
+
+12) Add some ajax to the follow/unfollow button
+
+- edit the `_follow.html.erb` and `_unfollow.html.erb` partials to support javascript (add `remote: true` to the `form_for` method)
+- update the Relationship controller to reload the destination page by using ajax
+- create the javascript files corresponding to the two actions in `view/relationships`
