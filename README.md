@@ -364,3 +364,9 @@ and one for ensuring that a user cannot follow another user more than one time
 - create the `_follow.html.erb` partial in the `view/users` folder
 - create the `_unfollow.html.erb` partial in the `view/users` folder
 - render the `_follow_form.html.erb` partial in the user profile
+
+10) Add pages for listing followers and followed users
+
+- add two new actions in the User controller for following and follower (based on previously created routes)
+- add `show_follow.html.erb` in the `view/users` folder
+- add a `_user.html.erb` partial in the `view/users` folder to avoid code replication (update the `index.html.erb` view too)
