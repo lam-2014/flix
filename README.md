@@ -348,3 +348,5 @@ and one for ensuring that a user cannot follow another user more than one time
 6) Add some sample following data by updating the `populate` rake task
 
 - reset the database, and populate it again
+
+7) Add routes for following and follower, linked to the User route
