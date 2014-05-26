@@ -339,3 +339,8 @@ and one for ensuring that a user cannot follow another user more than one time
 
 - a user has many followed user, through the relationships table
 - define some useful methods (is the current user following a given user? follow and unfollow a user)
+
+5) Update the User model to include Followers properties
+
+- a user has many "reverse" relationships
+- a user has many followers through the previously defined "reverse" relationships table
